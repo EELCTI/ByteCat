@@ -25,5 +25,77 @@ h1, h2, h3, p, a {
 }
 
 body{
-    background-color: var(--cor-fundo);
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #12021f 0%, #1a0529 100%);
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(179, 136, 255, 0.25), transparent 22%),
+        radial-gradient(circle at 80% 15%, rgba(106, 13, 173, 0.20), transparent 18%),
+        radial-gradient(circle at 40% 80%, rgba(95, 39, 205, 0.18), transparent 24%);
+    animation: drift 30s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes drift {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(12vw, -9vh) scale(1.05);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+/* Estilos do Header */
+header {
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    border-bottom: 3px solid var(--cor-neon);
+    padding: 1rem 0;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(179, 136, 255, 0.2);
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--cor-neon), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+header navbar-bc {
+    display: block;
+}
+
+header a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    color: var(--cor-neon);
+    text-shadow: 0 0 8px var(--cor-neon);
 }
