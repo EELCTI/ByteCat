@@ -1,5 +1,5 @@
 <?php
-$dbFile = __DIR__ . '/assets/data/bancoDadosPC.sqbpro';
+$dbFile = __DIR__ . '/src/data/bancoDadosPC.db';
 
 try {
     $pdo = new PDO('sqlite:' . $dbFile);

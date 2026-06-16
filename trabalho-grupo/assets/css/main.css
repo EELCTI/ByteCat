@@ -1,0 +1,30 @@
+:root {
+       --cor-fundo: #1a0529;
+       /* Um roxo muito escuro, quase preto */
+       --cor-primaria: #4B0082;
+       /* Seu Roxo Índigo */
+       --cor-secundaria: #6a0dad;
+       /* Um roxo um pouco mais claro para hover/transições */
+       --cor-neon: #b388ff;
+       /* Roxo claro para brilho */
+       --cor-texto: #e0d4fc;
+       /* Branco levemente azulado/roxo */
+       --borda-tela: 2px solid var(--cor-secundaria);
+    }
+
+
+@font-face {
+    font-family: fonte-bytecat;
+    src: url(/assets/font/UbuntuMono-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, p, a {
+    font-family: fonte-bytecat;
+    color: var(--cor-texto);
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
