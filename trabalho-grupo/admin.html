@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css.map">
+    <!--Estilização-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--Lib-->
+    <script type="module" src="assets/JS/lib.js"></script>
 </head>
+
 <body>
-    <h1>Olá Admin</h1>
-    <button><a href="form.html">Regitrar</a></button>
-    <button><a href="edit.html">Editar</a></button>
-    <button><a href="index.html">Voltar</a></button>
+    <section class="container p-0 m-0">
+        <div>
+            <h1>Olá Admin</h1>
+            <button><a href="form.html">Regitrar</a></button>
+            <button><a href="edit.html">Editar</a></button>
+            <button><a href="index.html">Voltar</a></button>
+        </div>
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Codição</th>
+                    <th>Descricão</th>
+                    <th colspan="2">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bife</td>
+                    <td>Almoço</td>
+                    <td>Delicioso prato</td>
+                    <td><a class="botao-editar" href="edit.html">Editar</a></td>
+                    <td>
+                        <form>
+                            <input type="button" class="botao-excluir" value="Excluir">
+                        </form>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Frango</td>
+                    <td>Almoço</td>
+                    <td>Delicioso prato</td>
+                    <td><a class="botao-editar" href="edit.html">Editar</a></td>
+                    <td>
+                        <form>
+                            <input type="button" class="botao-excluir" value="Excluir">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Café Gelado</td>
+                    <td>Café</td>
+                    <td>Delicioso prato</td>
+                    <td><a class="botao-editar" href="edit.html">Editar</a></td>
+                    <td>
+                        <form>
+                            <input type="button" class="botao-excluir" value="Excluir">
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="botao-cadastrar" href="form.html">Cadastrar produto</a>
+        <form action="#" method="post">
+            <input type="submit" class="botao-cadastrar" value="Baixar Relatório" />
+        </form>
+    </section>
 </body>
+
 </html>
