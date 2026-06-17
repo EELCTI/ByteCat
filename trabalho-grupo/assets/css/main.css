@@ -25,6 +25,15 @@ h1, h2, h3, p, a {
     color: var(--cor-texto);
 }
 
+label {
+    font-family: fonte-bytecat;
+    color: var(--cor-neon);
+}
+
+button {
+    background-color: var(--cor-neon);
+}
+
 body{
     background-color: var(--cor-fundo);
 }
