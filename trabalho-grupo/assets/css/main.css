@@ -20,6 +20,10 @@
     font-style: normal;
 }
 
+hr {
+    color: var(--cor-texto);
+}
+
 h1, h2, h3, p, a {
     font-family: fonte-bytecat;
     color: var(--cor-texto);
